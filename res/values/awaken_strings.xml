@@ -149,4 +149,8 @@
     <string name="lockscreen_weather_omni_style_title">Omni style</string>
     <string name="lockscreen_weather_pixel_style_title">Pixel style</string>
 
+    <!--SystemUI Tuner -->
+    <string name="statusbar_tuner_title">Statusbar Items</string>
+    <string name="statusbar_tuner_summary">Select which statusbar icons to disable</string>
+
 </resources>
