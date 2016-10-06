@@ -71,6 +71,14 @@
             android:entries="@array/volume_panel_entries"
             android:entryValues="@array/volume_panel_values"
             android:defaultValue="@string/volume_panel_aosp_val" />
+
+        <!-- Volume Steps -->
+        <PreferenceScreen
+            android:key="volume_steps"
+            android:title="@string/volume_steps_title"
+            android:fragment="com.awaken.settings.VolumeSteps" />
+
     </PreferenceCategory>
+
 
 </PreferenceScreen>
