@@ -30,4 +30,10 @@
         android:summaryOff="@string/summary_dashboard_suggestions_disabled"
         android:defaultValue="true"/>
 
+    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+        android:key="headset_connect_player"
+        android:title="@string/headset_connect_player_title"
+        android:summary="@string/headset_connect_player_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>

@@ -179,4 +179,8 @@
     <string name="qs_theme_category">Style</string>
     <string name="qs_panel_alpha_title">Background opacity</string>
 
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app on headset connection</string>
+    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+
 </resources>
