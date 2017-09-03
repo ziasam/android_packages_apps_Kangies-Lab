@@ -23,6 +23,7 @@ import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.provider.SearchIndexableResource;
+import android.widget.Toast;
 
 import androidx.preference.PreferenceCategory;
 import androidx.preference.ListPreference;
