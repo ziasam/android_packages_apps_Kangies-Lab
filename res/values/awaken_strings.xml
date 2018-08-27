@@ -42,6 +42,8 @@
     <string name="notifications_summary">Notifications headers and more</string>
     <string name="miscellaneous_summary">Dashboard conditions, Dashboard suggestions and more</string>
     <string name="ambient_display_summary">Always on, gestures and more</string>
+    <string name="animation_title">Animations</string>
+    <string name="animation_summary">Change the animation styles</string>
 
     <!-- Double Tap gestures -->
     <string name="double_tap_sleep_lockscreen_title">Double tap to sleep on lockscreen</string>
