@@ -35,7 +35,7 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
-
+import com.android.internal.util.du.Utils;
 import com.android.internal.logging.nano.MetricsProto;
 
 import java.util.ArrayList;
@@ -54,6 +54,7 @@ public class Notifications extends SettingsPreferenceFragment
     private SystemSettingSeekBarPreference mEdgeLightRepeatCountPreference;
     private ListPreference mColorMode;
 
+    private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
     private static final String NOTIFICATION_PULSE_COLOR = "ambient_notification_light_color";
     private static final String AMBIENT_LIGHT_DURATION = "ambient_light_duration";
     private static final String AMBIENT_LIGHT_REPEAT_COUNT = "ambient_light_repeat_count";
@@ -109,6 +110,11 @@ public class Notifications extends SettingsPreferenceFragment
             mEdgeLightColorPreference.setSummary(edgeLightColorHex);
         }
         mEdgeLightColorPreference.setOnPreferenceChangeListener(this);
+      
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!Utils.isVoiceCapable(getActivity())) {
+            prefScreen.removePreference(incallVibCategory);
+        }
     }
 
     @Override
