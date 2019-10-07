@@ -22,4 +22,10 @@
         android:summary="@string/headset_connect_player_summary"
         android:defaultValue="false" />
 
+     <Preference
+        android:key="smart_pixels" 
+        android:title="@string/smart_pixels_title" 
+        android:summary="@string/smart_pixels_summary"
+        android:fragment="com.awaken.settings.SmartPixels" />
+
 </PreferenceScreen>
