@@ -59,4 +59,17 @@
 	    android:layout="@layout/preference_awakensettings_lockscreen"
 	    />
 
+        <!-- Ambient Display -->
+        <Preference
+            android:key="ambient_display_custom"
+            android:persistent="false"
+            android:title="@string/ambient_display_custom_title"
+	    android:layout="@layout/preference_awakensettings_ambient_display"
+            android:icon="@drawable/ic_settings_ambient" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.custom.ambient.display"
+                android:targetClass="com.custom.ambient.display.DozeSettings" />
+        </Preference>
+
 </PreferenceScreen>
