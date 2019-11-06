@@ -28,4 +28,12 @@
         android:summary="@string/quick_settings_vibrate_summary"
         android:defaultValue="false"/>
 
+    <!-- Battery mode -->
+    <com.awaken.support.preferences.SystemSettingListPreference
+        android:key="qs_battery_mode"
+        android:title="@string/battery_percentage_title"
+        android:entries="@array/qs_battery_mode_entries"
+        android:entryValues="@array/qs_battery_mode_values"
+        android:defaultValue="1" />
+
 </PreferenceScreen>
