@@ -166,7 +166,6 @@
         <item>1</item>
         <item>2</item>
     </string-array>
-
     <string-array name="qs_show_brightness_slider_entries" translatable="false">
         <item>@string/qs_show_brightness_slider_show_never</item>
         <item>@string/qs_show_brightness_slider_show_expanded</item>
