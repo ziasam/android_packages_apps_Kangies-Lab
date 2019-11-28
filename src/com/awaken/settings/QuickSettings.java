@@ -36,13 +36,17 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.logging.nano.MetricsProto;
+import com.dirtyunicorns.support.preferences.SystemSettingEditTextPreference;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class QuickSettings extends SettingsPreferenceFragment {
+public class QuickSettings extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
+    private static final String QS_FOOTER_TEXT_STRING = "qs_footer_text_string";
+    private SystemSettingEditTextPreference mFooterString;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -50,6 +54,34 @@ public class QuickSettings extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.quick_settings);
         PreferenceScreen prefSet = getPreferenceScreen();
 
+        mFooterString = (SystemSettingEditTextPreference) findPreference(QS_FOOTER_TEXT_STRING);
+        mFooterString.setOnPreferenceChangeListener(this);
+        String footerString = Settings.System.getString(getContentResolver(),
+                QS_FOOTER_TEXT_STRING);
+        if (footerString != null && footerString != "")
+            mFooterString.setText(footerString);
+        else {
+            mFooterString.setText("KangOS");
+            Settings.System.putString(getActivity().getContentResolver(),
+                    Settings.System.QS_FOOTER_TEXT_STRING, "KangOS");
+        }
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mFooterString) {
+            String value = (String) newValue;
+            if (value != "" && value != null)
+                Settings.System.putString(getActivity().getContentResolver(),
+                        Settings.System.QS_FOOTER_TEXT_STRING, value);
+            else {
+                mFooterString.setText("KangOS");
+                Settings.System.putString(getActivity().getContentResolver(),
+                        Settings.System.QS_FOOTER_TEXT_STRING, "KangOS");
+            }
+            return true;
+        }
+        return false;
     }
 
     @Override
