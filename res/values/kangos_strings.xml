@@ -209,8 +209,15 @@
     <string name="screenshot_gesture_delay_title">Activation delay</string>
     <string name="screenshot_gesture_delay_summary">Screenshot gesture activation delay</string>
 
-    <!-- VoLTE switch -->
+    <!-- Show VoLTE icon on Statusbar -->
     <string name="volte_switch_title">VoLTE icon</string>
     <string name="volte_switch_summary">Display VoLTE icon</string>
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon</string>
+    <string name="volte_icon_style_title">Select VoLTE Icon</string>
+    <string name="volte_icon_vo">Vo Only Icon</string>
+    <string name="volte_icon_volte">VoLTE Icon</string>
+    <string name="volte_icon_oos">VoLTE OOS Icon</string>
+    <string name="volte_icon_hd">HD Icon</string>
 
 </resources>
