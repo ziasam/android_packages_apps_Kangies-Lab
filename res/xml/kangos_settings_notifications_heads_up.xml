@@ -20,7 +20,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/notifications_title">
 
-    <com.dirtyunicorns.support.preference.GlobalSettingSwitchPreference
+    <com.dirtyunicorns.support.preferences.GlobalSettingSwitchPreference
         android:key="heads_up_notifications_enabled"
         android:title="@string/heads_up_notifications"
         android:summaryOn="@string/summary_heads_up_enabled"
