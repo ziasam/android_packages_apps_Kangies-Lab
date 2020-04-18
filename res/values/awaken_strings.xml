@@ -67,4 +67,6 @@
     <string name="roaming_indicator_icon_title">Roaming indicator</string>
     <string name="roaming_indicator_icon_summary">Display the roaming indicator in signal icon when in roaming mode</string>
 
+    <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Translucent notifications background</string>
 </resources>
