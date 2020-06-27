@@ -61,4 +61,16 @@
         android:entries="@array/torch_power_button_gesture_entries"
         android:entryValues="@array/torch_power_button_gesture_values" />
 
+    <PreferenceCategory
+        android:key="volume_panel_stuff"
+        android:title="@string/volume_panel">
+
+        <com.dirtyunicorns.support.preferences.SystemSettingListPreference
+            android:key="systemui_plugin_volume"
+            android:title="@string/volume_panel"
+            android:entries="@array/volume_panel_entries"
+            android:entryValues="@array/volume_panel_values"
+            android:defaultValue="@string/volume_panel_aosp_val" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
