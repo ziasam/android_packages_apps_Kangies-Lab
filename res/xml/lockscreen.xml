@@ -45,6 +45,12 @@
         android:title="@string/lockscreen_visualizer_enable"
         android:summary="@string/lockscreen_visualizer_enable_summary" />
 
+    <Preference
+        android:key="fod_icon_picker_category"
+        android:title="@string/fod_icon_picker_title"
+        android:summary="@string/fod_icon_picker_summary"
+        android:fragment="com.awaken.settings.fragments.FODIconPickerFragment" />
+
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_lock_icon"
         android:title="@string/lockscreen_lock_icon_title"

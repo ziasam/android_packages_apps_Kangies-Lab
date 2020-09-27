@@ -18,7 +18,10 @@ package com.awaken.settings;
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
@@ -43,16 +46,33 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.awaken.settings.util.CustomContextConstants;
+
+import com.dirtyunicorns.support.preferences.CustomSeekBarPreference;
+import com.dirtyunicorns.support.preferences.SystemSettingEditTextPreference;
+import com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference;
+import com.dirtyunicorns.support.preferences.SystemSettingListPreference;
+
+
 @SearchIndexable
 public class Lockscreen extends SettingsPreferenceFragment {
+
+    private static final String FOD_ICON_PICKER_CATEGORY = "fod_icon_picker_category";
+
+    private Preference mFODIconPicker;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.lockscreen);
         PreferenceScreen prefSet = getPreferenceScreen();
-        final Resources res = getResources();
-        final PreferenceScreen prefScreen = getPreferenceScreen();
+        PackageManager packageManager = getContext().getPackageManager();
+        boolean hasFod = packageManager.hasSystemFeature(CustomContextConstants.Features.FOD);
+
+        mFODIconPicker = (Preference) findPreference(FOD_ICON_PICKER_CATEGORY);
+        if (mFODIconPicker != null && !hasFod) {
+            prefSet.removePreference(mFODIconPicker);
+        }
     }
 
     @Override
