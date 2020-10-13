@@ -72,4 +72,12 @@
                 android:targetClass="com.custom.ambient.display.DozeSettings" />
         </Preference>
 
+        <!-- Miscellaneous -->
+        <Preference
+            android:key="miscellaneous_settings"
+            android:title="@string/miscellaneous_title"
+            android:fragment="com.awaken.settings.Miscellaneous"
+	    android:layout="@layout/preference_awakensettings_miscellaneous"
+	    />
+
 </PreferenceScreen>
