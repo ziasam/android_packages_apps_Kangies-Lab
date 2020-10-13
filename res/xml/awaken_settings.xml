@@ -23,6 +23,7 @@
         <Preference
             android:id="@+id/statusbar"
             android:title="@string/statusbar_title"
+            android:summary="@string/statusbar_summary"
             android:fragment="com.awaken.settings.Statusbar"
             android:layout="@layout/preference_awakensettings_statusbar"
             />
@@ -31,6 +32,7 @@
         <Preference
             android:id="@+id/quick_settings"
             android:title="@string/quicksettings_title"
+            android:summary="@string/quick_settings_summary"
             android:fragment="com.awaken.settings.QuickSettings"
             android:layout="@layout/preference_awakensettings_quicksettings"
             />
@@ -39,6 +41,7 @@
         <Preference
             android:key="button_settings"
             android:title="@string/button_settings_title"
+            android:summary="@string/buttons_summary"
             android:fragment="com.awaken.settings.ButtonSettings"
 	    android:layout="@layout/preference_awakensettings_buttons"
 	    />
@@ -47,6 +50,7 @@
         <Preference
             android:key="notifications_settings"
             android:title="@string/notifications_title"
+            android:summary="@string/notifications_summary"
             android:fragment="com.awaken.settings.Notifications"
 	    android:layout="@layout/preference_awakensettings_notifications"
 	    />
@@ -55,6 +59,7 @@
         <Preference
             android:key="lockscreen_settings"
             android:title="@string/lockscreen_title"
+            android:summary="@string/lockscreen_summary"
             android:fragment="com.awaken.settings.Lockscreen"
 	    android:layout="@layout/preference_awakensettings_lockscreen"
 	    />
@@ -64,6 +69,7 @@
             android:key="ambient_display_custom"
             android:persistent="false"
             android:title="@string/ambient_display_custom_title"
+            android:summary="@string/ambient_display_summary"
 	    android:layout="@layout/preference_awakensettings_ambient_display"
             android:icon="@drawable/ic_settings_ambient" >
             <intent
@@ -76,6 +82,7 @@
         <Preference
             android:key="miscellaneous_settings"
             android:title="@string/miscellaneous_title"
+            android:summary="@string/miscellaneous_summary"
             android:fragment="com.awaken.settings.Miscellaneous"
 	    android:layout="@layout/preference_awakensettings_miscellaneous"
 	    />
