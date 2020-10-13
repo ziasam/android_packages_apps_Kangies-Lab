@@ -63,12 +63,4 @@
         android:summary="@string/status_bar_battery_text_charging_summary"
         android:defaultValue="true" />
 
-	<Preference
-            android:key="systemui_tuner_statusbar"
-            android:title="@string/statusbar_items_title" >
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
-        </Preference>
-
 </PreferenceScreen>
