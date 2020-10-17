@@ -264,4 +264,7 @@
     <string name="qs_show_brightness_slider_show_expanded">Show when expanded</string>
     <string name="qs_show_brightness_slider_show_always">Show always</string>
 
+    <!-- Volume panel on left switch -->
+    <string name="volume_panel_on_left_title">Show volume panel on left</string>
+
 </resources>

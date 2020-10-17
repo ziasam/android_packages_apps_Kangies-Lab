@@ -49,6 +49,12 @@
         android:entryValues="@array/volume_key_cursor_control_values"
         android:defaultValue="0" />
 
+    <com.awaken.support.preferences.SystemSettingSwitchPreference
+        android:key="volume_panel_on_left"
+        android:title="@string/volume_panel_on_left_title"
+        android:defaultValue="false"
+        settings:controller="com.awaken.settings.VolumePanelOnLeftPreferenceController"/>
+
     <ListPreference
         android:key="torch_power_button_gesture"
         android:title="@string/torch_power_button_gesture_title"
