@@ -267,4 +267,7 @@
     <!-- Volume panel on left switch -->
     <string name="volume_panel_on_left_title">Show volume panel on left</string>
 
+    <string name="lockscreen_lock_icon_title">Lock icon</string>
+    <string name="lockscreen_lock_icon_summary">Display lock icon on the lockscreen</string>
+
 </resources>

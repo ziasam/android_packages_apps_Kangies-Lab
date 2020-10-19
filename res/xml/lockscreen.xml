@@ -62,6 +62,12 @@
         android:summary="@string/lockscreen_visualizer_enable_summary" />
 
     <com.awaken.support.preferences.SystemSettingSwitchPreference
+        android:key="lockscreen_lock_icon"
+        android:title="@string/lockscreen_lock_icon_title"
+        android:summary="@string/lockscreen_lock_icon_summary"
+        android:defaultValue="true" />
+
+    <com.awaken.support.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_battery_info"
         android:title="@string/lockscreen_battery_info_title"
         android:summary="@string/lockscreen_battery_info_summary"
