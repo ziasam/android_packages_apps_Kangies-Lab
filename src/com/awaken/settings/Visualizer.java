@@ -124,6 +124,6 @@ public class Visualizer extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.AWAKEN;
+        return MetricsEvent.DIRTYTWEAKS;
     }
 }

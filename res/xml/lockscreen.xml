@@ -16,19 +16,19 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/lockscreen_title" >
 
-    <com.awaken.support.preferences.SystemSettingSwitchPreference
+    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="double_tap_sleep_lockscreen"
         android:title="@string/double_tap_sleep_lockscreen_title"
         android:summary="@string/double_tap_sleep_lockscreen_summary"
         android:defaultValue="false" />
 
-    <com.awaken.support.preferences.SystemSettingSwitchPreference
+    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_sleep_gesture_title"
         android:summary="@string/double_tap_sleep_gesture_summary"
         android:defaultValue="false" />
 
-    <com.awaken.support.preferences.SecureSettingSwitchPreference
+    <com.dirtyunicorns.support.preferences.SecureSettingSwitchPreference
         android:key="lockscreen_translucent_notifications_bg_enabled"
         android:title="@string/translucent_lockscreen_notifications_bg_title"
         android:defaultValue="false" />
@@ -37,13 +37,13 @@
         android:key="lockscreen_media_art_options"
         android:title="@string/lockscreen_media_art_options_title" >
 
-    <com.awaken.support.preferences.SystemSettingSwitchPreference
+    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_media_art"
         android:title="@string/lockscreen_media_art_title"
         android:summary="@string/lockscreen_media_art_summary"
         android:defaultValue="true" />
 
-    <com.awaken.support.preferences.SystemSettingSeekBarPreference
+    <com.dirtyunicorns.support.preferences.SystemSettingSeekBarPreference
             android:key="lockscreen_media_blur"
             android:title="@string/lockscreen_media_blur_title"
             android:dependency="lockscreen_media_art"
@@ -61,13 +61,13 @@
         android:title="@string/lockscreen_visualizer_enable"
         android:summary="@string/lockscreen_visualizer_enable_summary" />
 
-    <com.awaken.support.preferences.SystemSettingSwitchPreference
+    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_lock_icon"
         android:title="@string/lockscreen_lock_icon_title"
         android:summary="@string/lockscreen_lock_icon_summary"
         android:defaultValue="true" />
 
-    <com.awaken.support.preferences.SystemSettingSwitchPreference
+    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_battery_info"
         android:title="@string/lockscreen_battery_info_title"
         android:summary="@string/lockscreen_battery_info_summary"
@@ -77,7 +77,7 @@
         android:key="lockscreen_weather"
         android:title="@string/lockscreen_weather_category" />
 
-        <com.awaken.support.preferences.SystemSettingSwitchPreference
+        <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_weather_enabled"
             android:title="@string/lockscreen_weather_enabled_title"
             android:summary="@string/lockscreen_weather_enabled_summary"
@@ -89,7 +89,7 @@
             android:summary="@string/lockscreen_weather_settings_summary"
             android:fragment="com.awaken.settings.OmniJawsSettings" />
 
-        <com.awaken.support.preferences.SystemSettingListPreference
+        <com.dirtyunicorns.support.preferences.SystemSettingListPreference
             android:key="lockscreen_weather_style"
             android:title="@string/lockscreen_weather_style_title"
             android:dialogTitle="@string/lockscreen_weather_style_title"
