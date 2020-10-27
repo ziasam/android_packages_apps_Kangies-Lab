@@ -244,10 +244,6 @@
     <string name="show_network_traffic_all">Both</string>
     <string name="nettraf_font_size">Single net font size</string>
 
-    <!-- Lockscreen media artwork -->
-    <string name="lockscreen_media_blur_title">Media art blur level</string>
-    <string name="lockscreen_media_art_options_title">Lockscreen media art</string>
-
     <!-- Volume rocker cursor control -->
     <string name="cursor_section_header">Cursor</string>
     <string name="volume_key_cursor_control_title">Keyboard cursor control</string>
