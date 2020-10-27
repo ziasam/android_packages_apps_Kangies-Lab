@@ -57,6 +57,14 @@
         android:summary="@string/qs_show_auto_brightness_summary"
         android:defaultValue="true" />
 
+    <com.dirtyunicorns.support.preferences.SystemSettingSeekBarPreference
+        android:key="qs_panel_bg_alpha"
+        android:title="@string/qs_panel_alpha_title"
+        android:max="255"
+        settings:min="100"
+        settings:interval="5"
+        android:defaultValue="255" />
+
     <!-- Battery mode -->
     <com.dirtyunicorns.support.preferences.SystemSettingListPreference
         android:key="qs_battery_mode"
