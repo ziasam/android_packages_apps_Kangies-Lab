@@ -334,4 +334,8 @@
     <string name="charging_animation_title">Charging animation</string>
     <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
 
+    <!-- Center R Notification headers -->
+    <string name="center_notification_headers_title">Center notification headers</string>
+    <string name="center_notification_headers_summary">Whether to Center R style notification headers (Requires a SystemUI restart)</string>
+
 </resources>
