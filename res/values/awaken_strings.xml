@@ -154,8 +154,8 @@
 
     <!-- Lockscreen weather style -->
     <string name="lockscreen_weather_style_title">Weather style</string>
-    <string name="lockscreen_weather_omni_style_title">Omni style</string>
-    <string name="lockscreen_weather_pixel_style_title">Pixel style</string>
+    <string name="lockscreen_weather_disable_style_title">Disable style</string>
+    <string name="lockscreen_weather_enable_style_title">Enable style</string>
 
     <!--SystemUI Tuner -->
     <string name="statusbar_tuner_title">Statusbar Items</string>
