@@ -81,6 +81,7 @@ public class AnimationSettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.animations);
         final ContentResolver resolver = getActivity().getContentResolver();
+        mSysUiContext = ActivityThread.currentActivityThread().getSystemUiContext();
 
         // QS animation
         mTileAnimationStyle = (ListPreference) findPreference(PREF_TILE_ANIM_STYLE);
