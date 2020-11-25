@@ -112,7 +112,7 @@ public class Notifications extends SettingsPreferenceFragment
         mEdgeLightColorPreference.setOnPreferenceChangeListener(this);
       
         PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
-        if (!EvolutionUtils.isVoiceCapable(getActivity())) {
+        if (!Utils.isVoiceCapable(getActivity())) {
             prefScreen.removePreference(incallVibCategory);
         }
     }
