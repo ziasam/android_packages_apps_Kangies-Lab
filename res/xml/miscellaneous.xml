@@ -30,7 +30,7 @@
         android:summaryOff="@string/summary_dashboard_suggestions_disabled"
         android:defaultValue="true"/>
 
-    <com.dirtunicorns.support.preferences.SystemSettingSwitchPreference
+    <com.dirtynicorns.support.preferences.SystemSettingSwitchPreference
         android:key="click_partial_screenshot"
         android:title="@string/click_partial_screenshot_title"
         android:summary="@string/click_partial_screenshot_summary"

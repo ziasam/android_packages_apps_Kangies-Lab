@@ -39,10 +39,6 @@
         android:summary="@string/charging_animation_summary"
         android:defaultValue="true" />
 
-    <PreferenceCategory
-        android:key="lockscreen_media_art_options"
-        android:title="@string/lockscreen_media_art_options_title" >
-
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_media_art"
         android:title="@string/lockscreen_media_art_title"
