@@ -203,4 +203,10 @@
     <!-- Nightlight Fod -->
     <string name="fod_night_light_title">Disable night light when showing FOD</string>
     <string name="fod_night_light_summary">Disable night light on lockscreen if FOD is active. Disabling this option might affect your fingerprint accuracy with night light on.</string>
+
+    <!-- Screenshot gesture delay -->
+    <string name="screenshot_category_title">Screenshot</string>
+    <string name="screenshot_gesture_delay_title">Activation delay</string>
+    <string name="screenshot_gesture_delay_summary">Screenshot gesture activation delay</string>
+
 </resources>

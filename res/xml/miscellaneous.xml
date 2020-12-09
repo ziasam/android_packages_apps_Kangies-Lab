@@ -28,4 +28,20 @@
         android:summary="@string/smart_pixels_summary"
         android:fragment="com.awaken.settings.SmartPixels" />
 
+    <PreferenceCategory
+        android:key="screenshot_category"
+        android:title="@string/screenshot_category_title" >
+
+        <com.dirtyunicorns.support.preferences.CustomSeekBarPreference
+            android:key="screenshot_gesture_delay"
+            android:title="@string/screenshot_gesture_delay_title"
+            android:summary="@string/screenshot_gesture_delay_summary"
+            android:max="500"
+            settings:min="0"
+            settings:interval="100"
+            settings:defaultValue="0"
+            settings:units="ms" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
