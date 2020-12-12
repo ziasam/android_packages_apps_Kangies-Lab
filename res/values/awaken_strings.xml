@@ -40,7 +40,7 @@
     <string name="buttons_summary">Playback control, jump to camera, advanced restart and more</string>
     <string name="lockscreen_summary">Media art, charging info, weather and more</string>
     <string name="notifications_summary">Notifications headers and more</string>
-    <string name="miscellaneous_summary">Dashboard conditions, Dashboard suggestions and more</string>
+    <string name="miscellaneous_summary">Some miscellanous features</string>
     <string name="ambient_display_summary">Always on, gestures and more</string>
     <string name="animation_title">Animations</string>
     <string name="animation_summary">Change the animation styles</string>
