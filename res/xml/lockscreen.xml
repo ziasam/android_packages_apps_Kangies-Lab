@@ -67,6 +67,13 @@
             android:entryValues="@array/fod_pressed_color_values"
             android:defaultValue="@*android:integer/config_fod_pressed_color" />
 
+        <!-- FOD Nightlight -->
+    <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
+            android:key="fod_night_light"
+            android:title="@string/fod_night_light_title"
+            android:summary="@string/fod_night_light_summary"
+            android:defaultValue="@*android:bool/disable_fod_night_light"  />
+
     <com.dirtyunicorns.support.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_lock_icon"
         android:title="@string/lockscreen_lock_icon_title"
