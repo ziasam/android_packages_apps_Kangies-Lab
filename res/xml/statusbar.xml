@@ -109,7 +109,7 @@
            android:key="clock_settings"
            android:title="@string/clock_style_category_title"
            android:summary="@string/clock_style_category_summary"
-           android:fragment="com.awaken.settings.ClockSettings" />
+           android:fragment="com.kangos.settings.ClockSettings" />
 
     <PreferenceScreen
             android:key="status_bar_icons"
